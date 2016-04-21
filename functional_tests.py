@@ -52,11 +52,12 @@ class NewVisitorTest(unittest.TestCase):
         #Após teclar ENTER a página é atualizada e lista ...
         inputbox.send_keys(Keys.ENTER)
 
-        table =  self.browser.find_element_by_id('id_list_tabe')
+        table =  self.browser.find_element_by_id('id_list_table')
         rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
-            any(row.text == '1: Comprar parafusos' for row in rows)
-        )
+            any(row.text == '1: Comprar parafusos' for row in rows),
+        "New to-do item did not appear in table"
+    	)
 
 
         #Ainda há uma caixa de texto esperando para adicionar outro item. Ele
