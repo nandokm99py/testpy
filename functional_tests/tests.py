@@ -1,6 +1,7 @@
+from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import unittest
+#import unittest
 
 #browser = webdriver.Firefox()
 
@@ -14,7 +15,8 @@ import unittest
 
 
 
-class NewVisitorTest(unittest.TestCase):
+#class NewVisitorTest(unittest.TestCase):
+class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -32,8 +34,10 @@ class NewVisitorTest(unittest.TestCase):
     
         #browser = webdriver.Firefox()
 
-        #Usuário ouviu falar de um novo site interessante e foi checar
-        self.browser.get('http://localhost:8000')
+        # Edith has heard abouta a cool new online to-do app. She goes
+        # to check out its homepage
+        #self.browser.get('http://localhost:8000')
+        self.browser.get(self.live_server_url)
 
         #Verifica no título e no cabeçalho que é uma lista de coisas a fazer
         #assert 'to-do' in browser.title, "Browser title was " + browser.title
@@ -82,8 +86,8 @@ class NewVisitorTest(unittest.TestCase):
 
        
 #É convidado a inserir um item agora mesmo
-if __name__ == '__main__':
-    unittest.main(warnings='ignore')
+#if __name__ == '__main__':
+#    unittest.main(warnings='ignore')
         
 
 #Escreve "Comprar parafusos" em uma caixa de texto
