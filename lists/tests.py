@@ -6,12 +6,20 @@ from django.template.loader import render_to_string
 from lists.views import home_page
 from lists.models import Item
 
-# Create your tests here.
+class ListViewTest(TestCase):
 
-#class SmokeTest(TestCase):
+    def test_uses_list_template(self):
+        response = self.client.get('/lists/the-only-list-in-the-world/')
+        self.assertTemplateUsed(response, 'list.html')
 
-#    def test_bad_maths(self):
-#        self.assertEqual(1 + 1, 3)
+    def test_displays_all_items(self):
+        Item.objects.create(text='itemey 1')
+        Item.objects.create(text='itemey 2')
+        
+        response = self.client.get('/lists/the-only-list-in-the-world/')
+
+        self.assertContains(response, 'itemey 1')
+        self.assertContains(response, 'itemey 2')
 
 class ItemModelTest(TestCase):
     
@@ -64,7 +72,7 @@ class HomePageTest(TestCase):
         response = home_page(request)
         
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(response['location'], '/')
+        self.assertEqual(response['location'], '/lists/the-only-list-in-the-world/')
         
         #self.assertIn('A new list item', response.content.decode())
         #expected_html = render_to_string(
@@ -77,18 +85,3 @@ class HomePageTest(TestCase):
         request = HttpRequest()
         home_page(request)
         self.assertEqual(Item.objects.count(), 0)
-        
-       # self.assertTrue(response.content.startswith(b'<html>'))
-       # self.assertIn(b'<title>To-Do lists</title>', response.content)
-        #self.assertTrue(response.content.endswith(b'</html>'))
-       # self.assertTrue(response.content.strip().endswith(b'</html>'))
-
-    def test_home_page_displays_all_list_items(self):
-        Item.objects.create(text='itemey 1')
-        Item.objects.create(text='itemey 2')
-
-        request = HttpRequest()
-        response = home_page(request)
-        self.assertIn('itemey 1', response.content.decode())
-        self.assertIn('itemey 2', response.content.decode())
-    
