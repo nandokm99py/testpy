@@ -1,21 +1,15 @@
+#from django.template.loader import HttpRequest
+#from django.test import TestCase
 from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-#import unittest
 
-#browser = webdriver.Firefox()
+#from lists.models import  Item, List
+#from lists.views import home_page
 
-#browser.get('http://localhost:8000')
-
-#assert 'To-Do' in browser.title
-#assert 'Django' in browser.title
+#class HomePageTest(TestCase)
 
 
-#pause
-
-
-
-#class NewVisitorTest(unittest.TestCase):
 class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
