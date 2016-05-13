@@ -9,5 +9,10 @@ lists/tests/tests.py.old
 requirements.txt.old
 requirements.txt~
 superlists/settings.py~
+<<<<<<< HEAD
 >>>>>>> 9225845c1e962953a2cd2eb415736cff6fee25d4
 superlists/__pycache__/
+=======
+deploy_tools/fabfile.pyc
+functional_tests/__pycache__/
+>>>>>>> 795b3a5ace5f984ce61d1f542d6404e47c517b3c
