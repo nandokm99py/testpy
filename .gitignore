@@ -6,3 +6,5 @@ lists/tests/tests.py.old
 requirements.txt.old
 requirements.txt~
 superlists/settings.py~
+deploy_tools/fabfile.pyc
+functional_tests/__pycache__/
