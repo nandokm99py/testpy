@@ -1,4 +1,13 @@
 db.sqlite3
 __pycache__
 *.pyc
+<<<<<<< HEAD
 superlists/settings.py.old
+=======
+err/
+lists/tests/tests.py.old
+requirements.txt.old
+requirements.txt~
+superlists/settings.py~
+>>>>>>> 9225845c1e962953a2cd2eb415736cff6fee25d4
+superlists/__pycache__/
