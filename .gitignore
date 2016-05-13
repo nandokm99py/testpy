@@ -1,3 +1,8 @@
 db.sqlite3
 __pycache__
 *.pyc
+err/
+lists/tests/tests.py.old
+requirements.txt.old
+requirements.txt~
+superlists/settings.py~
