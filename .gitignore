@@ -16,7 +16,16 @@ superlists/__pycache__/
 deploy_tools/fabfile.pyc
 functional_tests/__pycache__/
 <<<<<<< HEAD
+<<<<<<< HEAD
+__pycache__
 *.pyc
+db.sqlite3
+deploy_tools/fabfile.pyc
+functional_tests/__pycache/
+lists/__pycache/
+=======
+*.pyc
+>>>>>>> 5793ca5a9db5b0dc41e3d3b98dd50d80f162b6c1
 =======
 >>>>>>> 795b3a5ace5f984ce61d1f542d6404e47c517b3c
 *.pyc
@@ -30,6 +39,10 @@ functional_tests/__pycache__/
 lists/__pychache__/
 >>>>>>> 403b9e9281831f5448cc9bb1ab0846fe5aff7b71
 lists/__pycache__/
+<<<<<<< HEAD
+>>>>>>> 403b9e9281831f5448cc9bb1ab0846fe5aff7b71
+=======
+>>>>>>> 5793ca5a9db5b0dc41e3d3b98dd50d80f162b6c1
 superlists/__init__.pic
 superlists/__pycache__/
 superlists/settings.py.old
