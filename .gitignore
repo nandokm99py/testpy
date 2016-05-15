@@ -32,3 +32,11 @@ functional_tests/__pycache__/
 lists/__pychache__/
 lists/__pycache__/
 >>>>>>> 403b9e9281831f5448cc9bb1ab0846fe5aff7b71
+superlists/__init__.pic
+superlists/__pycache__/
+superlists/settings.py.old
+superlists/settings.pyc
+superlists/urls.pyc
+err/
+lists/migrations/__pycache__/
+lists/tests/__pycache__/
