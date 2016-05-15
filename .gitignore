@@ -8,3 +8,6 @@ requirements.txt~
 superlists/settings.py~
 deploy_tools/fabfile.pyc
 functional_tests/__pycache__/
+__pycache__
+*.pyc
+db.sqlite3
