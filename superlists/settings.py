@@ -28,7 +28,7 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 # Needed when DEBUG=False
-ALLOWED_HOSTS = ['superlists999.tk', '192.168.232.130', 'localhost', 'desktop.local'] 
+ALLOWED_HOSTS = ['superlists999.tk', '192.168.232.130', 'localhost', 'desktop.local', '191.180.7.131']
 #ALLOWED_HOSTS = []
 
 

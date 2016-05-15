@@ -15,13 +15,20 @@ superlists/__pycache__/
 =======
 deploy_tools/fabfile.pyc
 functional_tests/__pycache__/
+<<<<<<< HEAD
+*.pyc
+=======
 >>>>>>> 795b3a5ace5f984ce61d1f542d6404e47c517b3c
 *.pyc
 __pycache__
+>>>>>>> b3088508d28d6e09332b67fa5156574f9a0d663a
 db.sqlite3
 deploy_tools/fabfile.pyc
 functional_tests/__pycache__/
+<<<<<<< HEAD
+=======
 lists/__pychache__/
+>>>>>>> 403b9e9281831f5448cc9bb1ab0846fe5aff7b71
 lists/__pycache__/
 superlists/__init__.pic
 superlists/__pycache__/
