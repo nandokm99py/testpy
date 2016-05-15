@@ -19,3 +19,7 @@ functional_tests/__pycache__/
 *.pyc
 __pycache__
 db.sqlite3
+deploy_tools/fabfile.pyc
+functional_tests/__pycache__/
+lists/__pychache__/
+lists/__pycache__/
