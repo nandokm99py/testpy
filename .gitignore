@@ -23,3 +23,11 @@ deploy_tools/fabfile.pyc
 functional_tests/__pycache__/
 lists/__pychache__/
 lists/__pycache__/
+superlists/__init__.pic
+superlists/__pycache__/
+superlists/settings.py.old
+superlists/settings.pyc
+superlists/urls.pyc
+err/
+lists/migrations/__pycache__/
+lists/tests/__pycache__/
