@@ -16,3 +16,6 @@ superlists/__pycache__/
 deploy_tools/fabfile.pyc
 functional_tests/__pycache__/
 >>>>>>> 795b3a5ace5f984ce61d1f542d6404e47c517b3c
+*.pyc
+__pycache__
+db.sqlite3
