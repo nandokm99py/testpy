@@ -1,16 +1,34 @@
 db.sqlite3
 __pycache__
 *.pyc
+<<<<<<< HEAD
+superlists/settings.py.old
+=======
 err/
 lists/tests/tests.py.old
 requirements.txt.old
 requirements.txt~
 superlists/settings.py~
+<<<<<<< HEAD
+>>>>>>> 9225845c1e962953a2cd2eb415736cff6fee25d4
+superlists/__pycache__/
+=======
 deploy_tools/fabfile.pyc
 functional_tests/__pycache__/
+<<<<<<< HEAD
 __pycache__
 *.pyc
 db.sqlite3
 deploy_tools/fabfile.pyc
 functional_tests/__pycache/
 lists/__pycache/
+=======
+>>>>>>> 795b3a5ace5f984ce61d1f542d6404e47c517b3c
+*.pyc
+__pycache__
+db.sqlite3
+deploy_tools/fabfile.pyc
+functional_tests/__pycache__/
+lists/__pychache__/
+lists/__pycache__/
+>>>>>>> 403b9e9281831f5448cc9bb1ab0846fe5aff7b71
