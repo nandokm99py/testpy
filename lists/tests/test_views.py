@@ -86,7 +86,18 @@ class ListViewTest(TestCase):
     def test_displays_all_items(self):
         list_ = List.objects.create()
         Item.objects.create(text='itemey 1', list=list_)
-        Item.objects.create(text='itemey 2', list=list_)      
+        Item.objects.create(text='itemey 2', list=list_)
+
+    def test_validation_errors_end_up_on_lists_page(self):
+        list_ = List.objects.create()
+        response = self.client.post(
+            '/lists/%d/' % (list_.id,),
+            data={'item_text':''}
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'list.html')
+        expected_error = escape("You can't have an empty list item")
+        self.assertContains(response, expected_error)
     
 class HomePageTest(TestCase):
    
