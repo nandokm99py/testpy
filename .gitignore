@@ -51,3 +51,4 @@ superlists/urls.pyc
 err/
 lists/migrations/__pycache__/
 lists/tests/__pycache__/
+*.pyc
