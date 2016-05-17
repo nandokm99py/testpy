@@ -52,3 +52,11 @@ err/
 lists/migrations/__pycache__/
 lists/tests/__pycache__/
 *.pyc
+<<<<<<< HEAD
+=======
+__pycache__
+*.pyc
+*.pyc
+*.html~
+>>>>>>> 7f298182e245d9987aaa71231a18980c5bcca973
+*.html~
