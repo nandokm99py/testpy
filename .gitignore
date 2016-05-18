@@ -58,5 +58,9 @@ __pycache__
 *.pyc
 *.pyc
 *.html~
+<<<<<<< HEAD
 >>>>>>> 7f298182e245d9987aaa71231a18980c5bcca973
 *.html~
+=======
+lists/static/base.css.backup
+>>>>>>> 54bfbc871744aeec8ec3b1cd75f85c6b8691d8b3
