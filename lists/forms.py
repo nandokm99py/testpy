@@ -3,6 +3,7 @@ EMPTY_ITEM_ERROR ="You can't have an empty list item"
 
 from django.core.exceptions import ValidationError
 from django import forms
+from django.core.exceptions import ValidationError
 from lists.models import Item
 
 class ItemForm(forms.models.ModelForm):
@@ -30,14 +31,21 @@ class ExistingListItemForm(ItemForm):
         super().__init__(*args, **kwargs)
         self.instance.list = for_list
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 35d79d85df1a5d3a13b41ab8fb5ebbf391310979
     def validate_unique(self):
         try:
             self.instance.validate_unique()
         except ValidationError as e:
             e.error_dict = {'text': [DUPLICATE_ITEM_ERROR]}
             self._update_errors(e)
+<<<<<<< HEAD
 
 
     def save(self):
         return forms.models.ModelForm.save(self)
+=======
+            
+>>>>>>> 35d79d85df1a5d3a13b41ab8fb5ebbf391310979
