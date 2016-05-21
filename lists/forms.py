@@ -31,21 +31,13 @@ class ExistingListItemForm(ItemForm):
         super().__init__(*args, **kwargs)
         self.instance.list = for_list
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 35d79d85df1a5d3a13b41ab8fb5ebbf391310979
     def validate_unique(self):
         try:
             self.instance.validate_unique()
         except ValidationError as e:
             e.error_dict = {'text': [DUPLICATE_ITEM_ERROR]}
             self._update_errors(e)
-<<<<<<< HEAD
-
 
     def save(self):
         return forms.models.ModelForm.save(self)
-=======
-            
->>>>>>> 35d79d85df1a5d3a13b41ab8fb5ebbf391310979
+
