@@ -7,8 +7,13 @@ from django.template.loader import render_to_string
 from lists.views import home_page
 from lists.models import Item, List
 from lists.forms import (
+<<<<<<< HEAD
     DUPLICATE_ITEM_ERROR, EMPTY_ITEM_ERROR,
     ExistingListItemForm, ItemForm,
+=======
+    ItemForm, EMPTY_ITEM_ERROR,
+    DUPLICATE_ITEM_ERROR, ExistingListItemForm,
+>>>>>>> a2df7a7025ef75a243b6a6a33d46ce41ff8160b5
 )
 
 class ListViewTest(TestCase):
@@ -109,9 +114,15 @@ class ListViewTest(TestCase):
 
         #expected_error = escape("You've already got this in your list")
         expected_error = escape(DUPLICATE_ITEM_ERROR)
+<<<<<<< HEAD
         #self.assertContains(response, expected_error)
         #self.assertTemplateUsed(response, 'list.html')
         #self.assertEqual(Item.objects.all().count(), 1)
+=======
+        self.assertContains(response, expected_error)
+        self.assertTemplateUsed(response, 'list.html')
+        self.assertEqual(Item.objects.all().count(), 1)
+>>>>>>> a2df7a7025ef75a243b6a6a33d46ce41ff8160b5
 
 class HomePageTest(TestCase):
 
