@@ -13,11 +13,7 @@ class ItemFormTest(TestCase):
         list_ = List.objects.create()
         form = ExistingListItemForm(for_list=list_, data={'text': 'hi'})
         new_item = form.save()
-<<<<<<< HEAD
-        self.assertEqual(new_item, Item.objects.all()[0])                             
-=======
         self.assertEqual(new_item, Item.objects.all()[0])
->>>>>>> a2df7a7025ef75a243b6a6a33d46ce41ff8160b5
 
     def test_form_save_handles_saving_to_a_list(self):
         list_ = List.objects.create()
