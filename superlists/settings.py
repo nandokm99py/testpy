@@ -31,6 +31,22 @@ TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = ['superlists999.tk', '192.168.232.130', 'localhost', 'desktop.local', '191.180.9.123','live.superlists999.tk']
 #ALLOWED_HOSTS = []
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+        },
+    },
+    'root': {'level': 'INFO'},
+}
 
 # Application definition
 
@@ -87,4 +103,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(os.path.join(BASE_DIR,'../static'))
+#STATIC_ROOT = os.path.join(os.path.join(BASE_DIR,'../static'))
+STATIC_ROOT = os.path.join(BASE_DIR, '../static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'superlists', 'static'),
+)
