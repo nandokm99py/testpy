@@ -67,3 +67,5 @@ lists/static/base.css.backup
 lists/static/tests/*.~
 lists/static/list.js~
 accounts/static/accounts.js~
+accounts/urls.py~
+accounts/views.py~
